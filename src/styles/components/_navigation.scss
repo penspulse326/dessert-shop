@@ -1,0 +1,66 @@
+.logo {
+  a {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @include lg {
+    a {
+      width: 100%;
+      height: 40px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+      background-size: contain;
+    }
+  }
+}
+
+.btn-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+  width: 24px;
+  height: 24px;
+
+  transition: 0.3s;
+
+  span {
+    display: inline-block;
+    width: 18px;
+
+    border-top: 2px solid $primary;
+  }
+
+  @include lg {
+    display: none;
+  }
+}
+
+.btn-menu:hover {
+  transform: rotate(90deg);
+}
+
+.nav-menu {
+  li {
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+  }
+  a {
+    color: $primary;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
