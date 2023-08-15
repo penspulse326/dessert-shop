@@ -3,6 +3,8 @@
 @import "./base/typography";
 @import "./helpers/variables";
 @import "./helpers/mixins";
-
-@import "./components/navigation";
+@import "./layouts/grid";
+@import "./layouts/navigation";
+@import "./layouts/footer";
+@import "./components/product-ltem";
 @import "./pages/home";
