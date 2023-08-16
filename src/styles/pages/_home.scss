@@ -4,6 +4,24 @@
     height: 0;
     color: transparent;
   }
+
+  .product-card:nth-child(1) {
+    .product-image {
+      background-image: url("https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60");
+    }
+  }
+
+  .product-card:nth-child(2) {
+    .product-image {
+      background-image: url("https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60");
+    }
+  }
+
+  .product-card:nth-child(3) {
+    .product-image {
+      background-image: url("https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60");
+    }
+  }
 }
 
 // header
@@ -91,6 +109,10 @@
   @include lg {
     flex-direction: row;
 
+    height: 420px;
+
+    background-color: $secondary;
+
     &:nth-child(1) {
       .slogan-quote {
         content: url("../images/quote-1.svg");
@@ -106,12 +128,11 @@
 
 .intro-card:nth-child(2) {
   @include lg {
-    margin-top: 60px;
+    margin-top: 105px;
 
     .slogan-quote {
       order: 2;
     }
-
     .slogan-image {
       order: 3;
 
@@ -212,7 +233,7 @@
   @include lg {
     content: url("../images/quote-3.svg");
 
-    margin: 80px auto;
+    margin: 95px auto 80px auto;
     width: 90px;
     height: auto;
   }
@@ -221,22 +242,4 @@
 // today-selected
 .today-selected {
   margin-bottom: 80px;
-}
-
-.product-card:nth-child(1) {
-  .product-image {
-    background-image: url("https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60");
-  }
-}
-
-.product-card:nth-child(2) {
-  .product-image {
-    background-image: url("https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60");
-  }
-}
-
-.product-card:nth-child(3) {
-  .product-image {
-    background-image: url("https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60");
-  }
 }

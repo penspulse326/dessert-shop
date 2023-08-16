@@ -455,6 +455,7 @@ footer {
 @media (min-width: 1024px) {
   .product-list {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 0;
   }
@@ -513,10 +514,51 @@ footer {
   background-color: #ffe180;
 }
 
+.pagenator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #3f5d45;
+  font-size: 20px;
+}
+.pagenator li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #eaf0ed;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pagenator li:hover {
+  color: white;
+  background-color: #3f5d45;
+}
+.pagenator li:nth-child(-n+4) {
+  border-right: none;
+}
+@media (min-width: 1024px) {
+  .pagenator {
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
 .root-homepage h2 {
   width: 0;
   height: 0;
   color: transparent;
+}
+.root-homepage .product-card:nth-child(1) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60");
+}
+.root-homepage .product-card:nth-child(2) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60");
+}
+.root-homepage .product-card:nth-child(3) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60");
 }
 
 .header-homepage img {
@@ -588,6 +630,8 @@ footer {
 @media (min-width: 1024px) {
   .intro-card {
     flex-direction: row;
+    height: 420px;
+    background-color: #eaf0ed;
   }
   .intro-card:nth-child(1) .slogan-quote {
     content: url("../images/quote-1.svg");
@@ -599,7 +643,7 @@ footer {
 
 @media (min-width: 1024px) {
   .intro-card:nth-child(2) {
-    margin-top: 60px;
+    margin-top: 105px;
   }
   .intro-card:nth-child(2) .slogan-quote {
     order: 2;
@@ -691,7 +735,7 @@ footer {
 @media (min-width: 1024px) {
   .intro-quote {
     content: url("../images/quote-3.svg");
-    margin: 80px auto;
+    margin: 95px auto 80px auto;
     width: 90px;
     height: auto;
   }
@@ -701,14 +745,118 @@ footer {
   margin-bottom: 80px;
 }
 
-.product-card:nth-child(1) .product-image {
+.root-product .product-card:nth-child(1) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=800&q=60");
+}
+.root-product .product-card:nth-child(2) .product-image {
   background-image: url("https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60");
 }
-
-.product-card:nth-child(2) .product-image {
+.root-product .product-card:nth-child(3) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60");
+}
+.root-product .product-card:nth-child(4) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1474045326708-cdc78c2487cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b25bcab557acc2d93446512e117f1be&auto=format&fit=crop&w=800&q=60");
+}
+.root-product .product-card:nth-child(5) .product-image {
   background-image: url("https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60");
 }
+.root-product .product-card:nth-child(6) .product-image {
+  background-image: url("https://images.unsplash.com/photo-1499635842761-4f1f28fafcff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3d6d0e5a1d7e9cd7a3cc81626125a8ed&auto=format&fit=crop&w=800&q=60");
+}
+.root-product .product-card:nth-child(n+4) {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .root-product .product-card:nth-child(n+4) {
+    display: block;
+  }
+}
 
-.product-card:nth-child(3) .product-image {
-  background-image: url("https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60");
+.header-product .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  background-image: url("https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: right;
+}
+.header-product img {
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  .header-product {
+    margin-bottom: 60px;
+  }
+  .header-product .container {
+    padding: 40px 40px 128px 40px;
+  }
+  .header-product img {
+    width: 90px;
+  }
+}
+
+.product-display .row {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .product-display .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+.product-category-list {
+  color: #3f5d45;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+}
+.product-category-list div {
+  padding: 16px 0;
+  color: white;
+  background-color: #3f5d45;
+  color: white;
+}
+.product-category-list li {
+  padding: 16px 0;
+  border: 1px solid #eaf0ed;
+  border-top: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product-category-list li:hover {
+  background-color: #eaf0ed;
+}
+
+.login h2 {
+  padding: 30px 0;
+  background-color: #3f5d45;
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-list {
+  display: flex;
+  gap: 1px;
+  padding: 30px;
+  background-color: #eaf0ed;
+}
+.login-list li {
+  flex-grow: 1;
+  background-color: white;
+}
+.login-list a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 18px 16px;
 }/*# sourceMappingURL=all.css.map */
