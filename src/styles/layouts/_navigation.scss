@@ -94,6 +94,19 @@ nav {
   display: flex;
   align-items: center;
 
+  svg {
+    width: 24px;
+    height: 24px;
+
+    fill: $primary;
+
+    transition: 0.3s;
+
+    &:hover {
+      fill: $yellow;
+    }
+  }
+
   @include lg {
     margin-left: 80px;
   }

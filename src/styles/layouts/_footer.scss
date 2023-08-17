@@ -59,9 +59,6 @@ footer {
   div {
     padding: 16px 20px;
   }
-  span {
-    color: $primary;
-  }
 
   input {
     flex-grow: 1;
@@ -101,8 +98,6 @@ footer {
 
   margin: 0 auto;
   padding: 30px;
-
-  color: $primary;
 
   @include lg {
     flex-direction: row;
