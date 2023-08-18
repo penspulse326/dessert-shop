@@ -16,6 +16,14 @@ $gutter: 20px;
   flex-wrap: wrap;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 940px;

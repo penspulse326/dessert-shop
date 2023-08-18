@@ -125,35 +125,3 @@
 .login-form-wrapper {
   padding: 30px;
 }
-
-.login-input-wrapper {
-  display: flex;
-
-  margin-bottom: 16px;
-
-  background-color: $secondary;
-
-  span {
-    @include center;
-
-    width: 56px;
-    height: 56px;
-  }
-
-  input[type="text"] {
-    flex-grow: 1;
-
-    margin: 3px 0;
-    border: none;
-
-    background-color: transparent;
-
-    color: $primary;
-    font-size: 16px;
-
-    &::-webkit-input-placeholder {
-      color: $p-color;
-      font-weight: 300;
-    }
-  }
-}

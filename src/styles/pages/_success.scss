@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
 
-    a {
+    .btn-yellow {
       display: none;
     }
 
@@ -17,8 +17,8 @@
       margin-bottom: 60px;
       height: 460px;
 
-      a {
-        display: block;
+      .btn-yellow {
+        display: flex;
 
         margin-top: 52px;
       }
@@ -42,7 +42,7 @@
   }
 }
 
-.success-proccess {
+.success-progress {
   position: relative;
 
   display: flex;
